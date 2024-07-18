@@ -1,0 +1,77 @@
+.bg{
+  background:rgb(1, 0, 59);
+
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur noire avec 50% d'opacité */
+  z-index: 1; /* Assure que l'overlay est au-dessus de l'image */
+}
+
+body{
+  font-family:'Monospace';
+}
+.bg-blur{
+backdrop-filter:blur(10px);
+}
+.pos{
+  position:absolute;
+}
+.font{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 4rem;
+
+}
+.btn{
+border-radius:150px;
+box-shadow: 0 6px 12px -2px rgba(50,50,93,.25); 
+-webkit-box-shadow: 0 3px 10px rgba(0,0,0,.1);   
+ margin:8px;
+}
+.logo {
+  background-image: url('./assets/pngegg.png'); /* Chemin vers votre image de fond */
+  background-size: 286px 65px ;/* Définir la taille de l'image de fond en pixels (largeur x hauteur) */
+  background-repeat: no-repeat; /* Pour empêcher la répétition de l'image de fond */
+  background-position: center; /* Pour centrer l'image de fond */
+  width: 212px; /* Largeur de l'élément contenant */
+  height: 52px; /* Hauteur de l'élément contenant */
+  display: flex; /* Pour centrer le texte verticalement et horizontalement */
+  justify-content: right; /* Centrer le contenu horizontalement */
+  align-items: center; /* Centrer le contenu verticalement */
+  font-size: 2rem; /* Taille du texte */
+  color: #ffffff; /* Couleur du texte */
+  text-decoration: none;
+  font-family: 'Brush Script MT', cursive;
+}
+ .card1 img {
+  transition: transform 0.5s ease, filter 0.8s ease; /* Ajoute une transition douce pour les transformations et les filtres */
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+ .card1:hover img {
+  transform: scale(1.1); /* Agrandir l'image de 10% */
+  filter: brightness(1.2); /* Augmenter la luminosité de l'image de 20% */
+}
+.card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .card1 img {
+      max-height: 200px; /* Réduire encore plus pour les petits écrans */
+  }
+}
+@media only screen and (max-width: 992px) {
+  .center-mobile {
+    text-align: center;
+  }
+}
+
